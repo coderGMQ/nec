@@ -80,7 +80,10 @@
 
 - (void)didClicktextField:(UITextField *)textField {
     if (_delegate && [_delegate respondsToSelector:@selector(didClickTextFieldWithbean:text:tableViewCell:)]){
-        [_delegate didClickTextFieldWithbean:self.bean text:textField.text tableViewCell:self];
+        if ([textField.text isKindOfClass:[NSString class]]){
+            [_delegate didClickTextFieldWithbean:self.bean text:textField.text tableViewCell:self];
+        }
+        
     }
 
 }
