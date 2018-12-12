@@ -100,7 +100,9 @@ static NSString *const _necTakePictureCell = @"NECTakePictureCell";
 
 - (void)btnClick:(UIButton *)btn {
     if (btn == _submitBtn) {
-        NSLog(@"%@--%@...%@",_loginName,_password,_surePassword);
+        NSLog(@" loginName    = %@ ",_loginName);
+        NSLog(@" password     = %@ ",_password);
+        NSLog(@" surePassword = %@ ",_surePassword);
     }
 }
 
