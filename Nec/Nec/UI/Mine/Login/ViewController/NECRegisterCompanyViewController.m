@@ -21,9 +21,7 @@ static NSString *const _necTakePictureCell = @"NECTakePictureCell";
 {
     UITableView *_tableView;
     UIButton *_submitBtn;
-    NSString *_loginName;// 登录名
-    NSString *_password;// 密码
-    NSString *_surePassword;// 重复密码
+
     NSString *_orgName;// 公司名称
     NSString *_legalPerson;// 法人
     NSString *_licenseCode;// 营业执照注册号
@@ -39,6 +37,13 @@ static NSString *const _necTakePictureCell = @"NECTakePictureCell";
     NSString *_taxCodePic;// 税务登记证图片
 }
 @property (nonatomic, strong) NSArray *dataSource;
+
+@property (nonatomic,strong) NSString *loginName;// 登录名
+@property (nonatomic,strong) NSString *password;// 密码
+@property (nonatomic,strong) NSString *surePassword;// 重复密码
+
+
+
 @end
 
 @implementation NECRegisterCompanyViewController
@@ -100,9 +105,9 @@ static NSString *const _necTakePictureCell = @"NECTakePictureCell";
 
 - (void)btnClick:(UIButton *)btn {
     if (btn == _submitBtn) {
-        NSLog(@" loginName    = %@ ",_loginName);
-        NSLog(@" password     = %@ ",_password);
-        NSLog(@" surePassword = %@ ",_surePassword);
+        NSLog(@" loginName    = %@ ",self.loginName);
+        NSLog(@" password     = %@ ",self.password);
+        NSLog(@" surePassword = %@ ",self.surePassword);
     }
 }
 
@@ -199,13 +204,14 @@ static NSString *const _necTakePictureCell = @"NECTakePictureCell";
 
 - (void)didClickTextFieldWithbean:(NECRegisterBean *)bean text:(NSString *)text tableViewCell:(NECTitleTextFieldCell *)cell{
     NSIndexPath *indexPath = [_tableView indexPathForCell:cell];
+    NSLog(@"-------------%@",text);
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            _loginName = text;
+            self.loginName = text;
         } else if (indexPath.row == 1) {
-            _password = text;
+            self.password = text;
         } else if (indexPath.row == 2){
-            _surePassword = text;
+            self.surePassword = text;
         } else {
             
         }
