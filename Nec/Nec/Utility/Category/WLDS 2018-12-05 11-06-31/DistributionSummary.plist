@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WLDS.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>BBA264CAFEFA6D7F33C188ADE99F0BB2EB0A2669</string>
+				<key>dateExpires</key>
+				<string>2019/11/11</string>
+				<key>type</key>
+				<string>iOS Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>PHSNY7Y3VJ.com.zhihundaohe.WLDS</string>
+				<key>aps-environment</key>
+				<string>development</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>PHSNY7Y3VJ</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>WLDS.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>3f258726-e08d-4641-bc5f-7c8cf2020f15</string>
+				<key>name</key>
+				<string>wlds_dev</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>PHSNY7Y3VJ</string>
+				<key>name</key>
+				<string>Nanjing Intelligent Transportation Network Technology Co., Ltd.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
