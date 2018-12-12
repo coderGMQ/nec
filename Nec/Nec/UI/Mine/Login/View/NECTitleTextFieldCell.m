@@ -79,8 +79,8 @@
 #pragma mark - UITextFieldDelegate
 
 - (void)didClicktextField:(UITextField *)textField {
-    if (_delegate && [_delegate respondsToSelector:@selector(didClickTextFieldWithbean:textField:tableViewCell:)]){
-        [_delegate didClickTextFieldWithbean:self.bean textField:textField tableViewCell:self];
+    if (_delegate && [_delegate respondsToSelector:@selector(didClickTextFieldWithbean:text:tableViewCell:)]){
+        [_delegate didClickTextFieldWithbean:self.bean text:textField.text tableViewCell:self];
     }
 
 }

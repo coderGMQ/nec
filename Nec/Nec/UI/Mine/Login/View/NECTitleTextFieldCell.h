@@ -13,7 +13,7 @@
 @class NECTitleTextFieldCell;
 
 @protocol NECTitleTextFieldCellDelegate <NSObject>
-- (void)didClickTextFieldWithbean:(NECRegisterBean *)bean textField:(UITextField *)textField tableViewCell:(NECTitleTextFieldCell *)cell;
+- (void)didClickTextFieldWithbean:(NECRegisterBean *)bean text:(NSString *)text tableViewCell:(NECTitleTextFieldCell *)cell;
 @end
 
 @interface NECTitleTextFieldCell : UITableViewCell

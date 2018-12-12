@@ -195,16 +195,15 @@ static NSString *const _necTakePictureCell = @"NECTakePictureCell";
 
 #pragma mark - NECTitleTextFieldCellDelegate
 
-- (void)didClickTextFieldWithbean:(NECRegisterBean *)bean textField:(UITextField *)textField tableViewCell:(NECTitleTextFieldCell *)cell{
-//    UITableViewCell *cell = (UITableViewCell *)[[textField superview] superview];
+- (void)didClickTextFieldWithbean:(NECRegisterBean *)bean text:(NSString *)text tableViewCell:(NECTitleTextFieldCell *)cell{
     NSIndexPath *indexPath = [_tableView indexPathForCell:cell];
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            _loginName = textField.text;
+            _loginName = text;
         } else if (indexPath.row == 1) {
-            _password = textField.text;
+            _password = text;
         } else if (indexPath.row == 2){
-            _surePassword = textField.text;
+            _surePassword = text;
         } else {
             
         }
